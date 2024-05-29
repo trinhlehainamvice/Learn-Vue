@@ -1,4 +1,6 @@
 # Ref: https://github.com/marketplace/actions/deploy-to-github-pages
+# NOTE: before upload to GitHub Pages, check and set package.json private to false
+# https://github.com/orgs/community/discussions/23058#discussioncomment-3368631
 name: Build and Deploy to GitHub Pages
 permissions:
   contents: write
