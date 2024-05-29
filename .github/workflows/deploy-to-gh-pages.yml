@@ -18,8 +18,10 @@ jobs:
 
       - uses: ./.github/actions/setup-and-cache 
 
-      - name: Build 🔧
-        run: pnpm build
+      - name: Install and Build 🔧
+        run: |
+          pnpm install
+          pnpm build
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
