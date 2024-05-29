@@ -6,6 +6,8 @@ on:
   push:
     branches:
       - release
+env:
+  PLAYWRIGHT_BROWSERS_PATH: ${{ github.workspace }}/.cache/ms-playwright
 jobs:
   deploy:
     concurrency: ci-${{ github.ref }}
