@@ -34,6 +34,9 @@
       "@store/*": [
         "./src/store/*"
       ],
+      "@composables/*": [
+        "./src/composables/*"
+      ],
       "@plugins/*": [
         "./src/plugins/*"
       ],

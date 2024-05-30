@@ -22,19 +22,19 @@ const _status_list = computed(() => {
       pending: {
         total: 0,
         name: 'statuses.pending',
-        bg_color: 'bg-white',
+        bg_color: 'bg-primary-0',
         text_color: 'text-black'
       },
       in_progress: {
         total: 0,
         name: 'statuses.in-progress',
-        bg_color: 'bg-green-600',
+        bg_color: 'bg-primary-600',
         text_color: 'text-white'
       },
       completed: {
         total: 0,
         name: 'statuses.completed',
-        bg_color: 'bg-green-400',
+        bg_color: 'bg-primary-400',
         text_color: 'text-white'
       }
     }

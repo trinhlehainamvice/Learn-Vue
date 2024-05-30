@@ -25,6 +25,7 @@ export default defineConfig({
       '@ui': fileURLToPath(new URL('./src/components', import.meta.url)),
       '@views': fileURLToPath(new URL('./src/views', import.meta.url)),
       '@store': fileURLToPath(new URL('./src/store', import.meta.url)),
+      '@composables': fileURLToPath(new URL('./src/composables', import.meta.url)),
       '@plugins': fileURLToPath(new URL('./src/plugins', import.meta.url)),
       '@services': fileURLToPath(new URL('./src/services', import.meta.url))
     }
