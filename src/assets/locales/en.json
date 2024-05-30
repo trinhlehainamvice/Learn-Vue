@@ -1,0 +1,18 @@
+{
+	"statuses": {
+		"pending": "Pending",
+		"in-progress": "In Progress",
+		"completed": "Completed"
+	},
+	"titles": {
+		"todo-list": "Todo List",
+		"new-item": "Add New Item",
+		"edit-item": "Edit Item"
+	},
+	"status": "Status",
+	"content": "Content",
+	"search": "Filter By Content",
+	"new-item": "New Item",
+	"edit-item": "Edit",
+	"delete": "Delete"
+}

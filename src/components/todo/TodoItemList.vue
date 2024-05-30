@@ -18,7 +18,7 @@ const $self = defineProps({
     <span class="py-2 px-4 font-bold">Content</span>
     <Button
       class="right-4 ml-auto"
-      label="New Item"
+      :label="$t('new-item')"
       icon="pi pi-plus"
       severity="info"
       @click="$self.add_item"

@@ -66,7 +66,7 @@ const _searched_list = computed(() => {
   <!-- background -->
   <div class="w-full min-h-screen">
     <header class="sticky top-0 z-10 w-full">
-      <HeaderBar class="text-2xl font-bold bg-primary-600" />
+      <HeaderBar />
     </header>
     <main class="flex flex-col gap-y-4 items-center p-20 mx-auto w-3/5 h-full">
       <TodoStatusSummaryList :items="_todo_list" />
@@ -79,13 +79,11 @@ const _searched_list = computed(() => {
       />
     </main>
     <!-- Modals -->
-    <Modal class="z-20" :name="MODAL.addItem" title="Add Item">
+    <Modal class="z-20" :name="MODAL.addItem" :title="$t('titles.new-item')">
       <TodoItemForm v-model:status="_status" v-model:content="_content" />
     </Modal>
-    <Modal class="z-20" :name="MODAL.editItem" title="Edit Item">
+    <Modal class="z-20" :name="MODAL.editItem" :title="$t('titles.edit-item')">
       <TodoItemForm v-model:status="_status" v-model:content="_content" />
     </Modal>
   </div>
 </template>
-
-<style scoped></style>

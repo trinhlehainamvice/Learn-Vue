@@ -1,0 +1,15 @@
+{
+	"statuses": {
+		"pending": "保留中",
+		"in-progress": "進行中",
+		"completed": "完了"
+	},
+	"titles": {
+		"add-item": "新しい項目を追加",
+		"edit-item": "項目を編集"
+	},
+	"content": "コンテンツ",
+	"new-item": "新しい項目",
+	"edit": "編集",
+	"delete": "削除"
+}

@@ -21,19 +21,19 @@ const _status_list = computed(() => {
     {
       pending: {
         total: 0,
-        name: EItemStatus.pending,
+        name: 'statuses.pending',
         bg_color: 'bg-white',
         text_color: 'text-black'
       },
       in_progress: {
         total: 0,
-        name: EItemStatus.in_progress,
+        name: 'statuses.in-progress',
         bg_color: 'bg-green-600',
         text_color: 'text-white'
       },
       completed: {
         total: 0,
-        name: EItemStatus.completed,
+        name: 'statuses.completed',
         bg_color: 'bg-green-400',
         text_color: 'text-white'
       }
@@ -58,7 +58,7 @@ const get_status_summary = (status: string) => {
       :class="get_status_summary(item).bg_color + ' ' + get_status_summary(item).text_color"
       class="flex flex-col gap-y-2 py-4 px-3 w-1/3 font-bold"
     >
-      <span class="text-xl">{{ get_status_summary(item).name }}</span>
+      <span class="text-xl">{{ $t(get_status_summary(item).name) }}</span>
       <span class="text-6xl">{{ get_status_summary(item).total }}</span>
     </div>
   </div>

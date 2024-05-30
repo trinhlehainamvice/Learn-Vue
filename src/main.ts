@@ -10,15 +10,23 @@ import PrimeVue from 'primevue/config'
 // @ts-ignore
 import Lara from '@assets/primevue/presets/lara'
 import Modals from '@plugins/modals'
+import { createI18n } from 'vue-i18n'
+import messages from '@intlify/unplugin-vue-i18n/messages'
 
-const app = createApp(App)
-
-app.use(createPinia())
-app.use(router)
-app.use(Modals)
-app.use(PrimeVue, {
-  unstyled: true,
-  pt: Lara
+const i18n = createI18n({
+  legacy: false,
+  locale: 'en',
+  fallbackLocale: 'en',
+  messages
 })
 
-app.mount('#app')
+createApp(App)
+  .use(PrimeVue, {
+    unstyled: true,
+    pt: Lara
+  })
+  .use(i18n)
+  .use(createPinia())
+  .use(router)
+  .use(Modals)
+  .mount('#app')
